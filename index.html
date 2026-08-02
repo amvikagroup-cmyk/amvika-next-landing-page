@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amvika Next - Business & Digital Services Portal</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0b1921',
+                        brandTeal: '#4fa8b7',
+                        brandLightTeal: '#7cd1df',
+                        brandGray: '#1a2e3b',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #1a2e3b;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #4fa8b7;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body class="bg-brandDark text-white font-sans antialiased selection:bg-brandTeal selection:text-brandDark">
+
+    <!-- Top Contact Bar -->
+    <div class="bg-brandGray border-b border-brandTeal/20 py-2 px-4 text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-4">
+                <a href="tel:9407171421" class="hover:text-brandLightTeal transition flex items-center gap-2">
+                    <i class="fas fa-phone text-brandTeal"></i> 9407171421
+                </a>
+                <a href="mailto:contact@amvikanext.com" class="hover:text-brandLightTeal transition flex items-center gap-2">
+                    <i class="fas fa-envelope text-brandTeal"></i> contact@amvikanext.com
+                </a>
+            </div>
+            <div class="text-xs text-gray-400 flex items-center gap-1">
+                <i class="fas fa-map-marker-alt text-brandTeal"></i> Matra Shree Sadan, Yadav Colony, Jabalpur, MP
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-brandDark/90 backdrop-blur-md border-b border-brandTeal/10 shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Brand Identity Graphic/Text (Color theme matched to logo image) -->
+            <div class="flex items-center gap-3">
+                <div class="relative w-10 h-10 border-2 border-brandTeal rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(79,168,183,0.3)]">
+                    <div class="w-6 h-6 border border-brandLightTeal rounded-full flex items-center justify-center">
+                        <i class="fas fa-arrow-up text-brandLightTeal text-xs transform rotate-45"></i>
+                    </div>
+                    <div class="absolute inset-0 bg-brandTeal/10 rounded-full animate-pulse"></div>
+                </div>
+                <div>
+                    <span class="text-xl font-bold tracking-wider block text-white">AMVIKA</span>
+                    <span class="text-xs font-semibold tracking-[0.25em] block text-brandTeal -mt-1">NEXT</span>
+                </div>
+            </div>
+            <a href="https://rzp.io/rzp/zqQDIEc" target="_blank" class="bg-gradient-to-r from-brandTeal to-brandLightTeal text-brandDark font-bold px-5 py-2.5 rounded-lg shadow-lg hover:shadow-brandTeal/20 hover:scale-[1.02] transition duration-200 flex items-center gap-2">
+                <i class="fas fa-user-plus"></i> Become a Retailer
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-b from-brandGray to-brandDark pt-16 pb-20 px-4 text-center overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(79,168,183,0.08)_0%,transparent_70%)]"></div>
+        <div class="max-w-4xl mx-auto relative z-10">
+            <span class="bg-brandTeal/10 text-brandLightTeal border border-brandTeal/30 text-xs font-semibold px-4 py-1.5 rounded-full uppercase tracking-wider">All-In-One Business Solutions Portal</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mt-6 mb-6 leading-tight">
+                Empower Your Business Growth with <span class="text-transparent bg-clip-text bg-gradient-to-r from-brandTeal to-brandLightTeal">Amvika Next</span>
+            </h1>
+            <p class="text-gray-300 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                From Legal Registrations, GST Compliances, and Taxation to Digital Marketing, Core IT Infrastructure, Financial, and Utility Services—we cover it all.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="#services" class="w-full sm:w-auto bg-transparent border border-brandTeal text-brandLightTeal font-semibold px-8 py-3.5 rounded-lg hover:bg-brandTeal/10 transition flex items-center justify-center gap-2">
+                    Explore Services <i class="fas fa-chevron-down text-sm"></i>
+                </a>
+                <a href="https://rzp.io/rzp/zqQDIEc" target="_blank" class="w-full sm:w-auto bg-gradient-to-r from-brandTeal to-brandLightTeal text-brandDark font-bold px-8 py-3.5 rounded-lg shadow-xl hover:scale-[1.02] transition flex items-center justify-center gap-2">
+                    Instant Retailer Registration <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Interactive Services Segment -->
+    <main id="services" class="max-w-7xl mx-auto px-4 py-16">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold tracking-tight">Comprehensive Services Catalog</h2>
+            <p class="text-gray-400 mt-2">Browse our full ecosystem of modern digital and operational services.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+            <!-- Left Side Category Navigator Buttons -->
+            <div class="lg:col-span-1 space-y-2 sticky top-24 self-start">
+                <p class="text-xs font-bold text-brandTeal uppercase tracking-wider px-3 mb-3">Service Verticals</p>
+                <button onclick="scrollToCategory('cat-registration')" class="w-full text-left px-4 py-3 rounded-lg bg-brandTeal text-brandDark font-bold flex items-center justify-between transition category-btn shadow-md" data-target="cat-registration">
+                    <span><i class="fas fa-id-card mr-2 w-5"></i> Registration</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-gst')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-gst">
+                    <span><i class="fas fa-calculator mr-2 w-5"></i> GST Return</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-compliances')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-compliances">
+                    <span><i class="fas fa-shield-rules mr-2 w-5"></i> Compliances</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-company')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-company">
+                    <span><i class="fas fa-building mr-2 w-5"></i> Company Setup</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-dsc')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-dsc">
+                    <span><i class="fas fa-signature mr-2 w-5"></i> DSC (Class 3)</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-accounting')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-accounting">
+                    <span><i class="fas fa-file-invoice-dollar mr-2 w-5"></i> Accounting & B/S</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-itr')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-itr">
+                    <span><i class="fas fa-piggy-bank mr-2 w-5"></i> Income Tax Return</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-graphics')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-graphics">
+                    <span><i class="fas fa-palette mr-2 w-5"></i> Graphics Package</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-marketing')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-marketing">
+                    <span><i class="fas fa-bullhorn mr-2 w-5"></i> Local Marketing</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-tech')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-tech">
+                    <span><i class="fas fa-code mr-2 w-5"></i> Web/App Dev</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-financial')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-financial">
+                    <span><i class="fas fa-hand-holding-usd mr-2 w-5"></i> Financial Services</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-utility')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-utility">
+                    <span><i class="fas fa-bolt mr-2 w-5"></i> Utility & Bill Pay</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-identity')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-identity">
+                    <span><i class="fas fa-user-check mr-2 w-5"></i> Identity & G2C</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-travel')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-travel">
+                    <span><i class="fas fa-plane mr-2 w-5"></i> Travel & IRCTC</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-vehicle')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-vehicle">
+                    <span><i class="fas fa-car mr-2 w-5"></i> Vehicle Services</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+                <button onclick="scrollToCategory('cat-software')" class="w-full text-left px-4 py-3 rounded-lg bg-brandGray text-gray-300 hover:bg-brandGray/80 font-medium flex items-center justify-between transition category-btn" data-target="cat-software">
+                    <span><i class="fas fa-laptop-code mr-2 w-5"></i> Enterprise Software</span>
+                    <i class="fas fa-chevron-right text-xs"></i>
+                </button>
+            </div>
+
+            <!-- Right Side Dynamic Content Area -->
+            <div class="lg:col-span-3 space-y-12">
+                
+                <!-- Registration -->
+                <section id="cat-registration" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-id-card"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Registration Services</h3>
+                            <p class="text-sm text-gray-400">Complete corporate registration ecosystem</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 hover:border-brandTeal/30 transition">
+                            <h4 class="font-bold text-brandLightTeal">GST Registration</h4>
+                            <p class="text-sm text-gray-400 mt-1">Available for Proprietorship, Company, and Partnership/LLP Firms.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 hover:border-brandTeal/30 transition">
+                            <h4 class="font-bold text-brandLightTeal">Proprietorship Registration</h4>
+                            <p class="text-sm text-gray-400 mt-1">Complete setup compliance package for independent proprietors.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 hover:border-brandTeal/30 transition">
+                            <h4 class="font-bold text-brandLightTeal">Partnership Registration</h4>
+                            <p class="text-sm text-gray-400 mt-1">Formal partnership deed drafting and registration clearance.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 hover:border-brandTeal/30 transition">
+                            <h4 class="font-bold text-brandLightTeal">IEC (Import Export Code)</h4>
+                            <p class="text-sm text-gray-400 mt-1">DGFT registration for establishing international trade footprints.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 hover:border-brandTeal/30 transition">
+                            <h4 class="font-bold text-brandLightTeal">Shops & Establishments Registration</h4>
+                            <p class="text-sm text-gray-400 mt-1">Mandatory local state labor department commercial license allocation.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 hover:border-brandTeal/30 transition">
+                            <h4 class="font-bold text-brandLightTeal">MSME (Udyam Registration)</h4>
+                            <p class="text-sm text-gray-400 mt-1">Avail continuous government subsidies, cluster benefits, and credit schemes.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 hover:border-brandTeal/30 transition">
+                            <h4 class="font-bold text-brandLightTeal">GeM Registration</h4>
+                            <p class="text-sm text-gray-400 mt-1">Government Marketplace vendor setup to capture institutional tenders.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 hover:border-brandTeal/30 transition">
+                            <h4 class="font-bold text-brandLightTeal">FSSAI Registration</h4>
+                            <p class="text-sm text-gray-400 mt-1">Food licenses across Basic Registration, State License, and Central License categories.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 hover:border-brandTeal/30 transition">
+                            <h4 class="font-bold text-brandLightTeal">ISO Certification</h4>
+                            <p class="text-sm text-gray-400 mt-1">Global operational standards documentation: with IAF and without IAF credentials.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 hover:border-brandTeal/30 transition">
+                            <h4 class="font-bold text-brandLightTeal">Trademark</h4>
+                            <p class="text-sm text-gray-400 mt-1">Comprehensive brand protection: Registration, Objection filing, Hearing charges, and Opposed Drafting representation.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- GST Return -->
+                <section id="cat-gst" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-calculator"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">GST Return Filing</h3>
+                            <p class="text-sm text-gray-400">Accurate tax ledger submissions and optimization</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5">
+                            <h4 class="font-bold text-brandLightTeal">Regular Taxpayer</h4>
+                            <p class="text-sm text-gray-400 mt-1">With Invoice processing, NIL Returns filing, and E-commerce operator reconciliation.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5">
+                            <h4 class="font-bold text-brandLightTeal">QRMP Scheme</h4>
+                            <p class="text-sm text-gray-400 mt-1">Quarterly Return Monthly Payment filing solutions including precise digital ledger generation.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5">
+                            <h4 class="font-bold text-brandLightTeal">Composition Scheme</h4>
+                            <p class="text-sm text-gray-400 mt-1">Simplified compliance architecture with NIL Returns and structural invoicing metrics.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5">
+                            <h4 class="font-bold text-brandLightTeal">Annual Filing</h4>
+                            <p class="text-sm text-gray-400 mt-1">Regular/Composition schemes, detailed Reconciliation Statements, and CA Certification (Turnover >2 Cr).</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 md:col-span-2">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <h5 class="text-sm font-semibold text-brandTeal">Non-Resident Taxpayer</h5>
+                                    <p class="text-xs text-gray-400 mt-0.5">GST Compliance Services for Non-Resident Taxpayers.</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-sm font-semibold text-brandTeal">ISD Returns</h5>
+                                    <p class="text-xs text-gray-400 mt-0.5">GST Compliance for Input Service Distributors.</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-sm font-semibold text-brandTeal">TDS Returns</h5>
+                                    <p class="text-xs text-gray-400 mt-0.5">Comprehensive structural TDS compliance updates.</p>
+                                </div>
+                                <div>
+                                    <h5 class="text-sm font-semibold text-brandTeal">E-commerce Operators</h5>
+                                    <p class="text-xs text-gray-400 mt-0.5">Simplified corporate reporting framework.</p>
+                                </div>
+                                <div class="sm:col-span-2">
+                                    <h5 class="text-sm font-semibold text-brandTeal">Final Returns</h5>
+                                    <p class="text-xs text-gray-400 mt-0.5">Hassle-Free Final GST Return Filing for Cancelled Registrations.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Compliances -->
+                <section id="cat-compliances" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-shield-halved"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Compliances</h3>
+                            <p class="text-sm text-gray-400">Statutory regularizations and legal declarations</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5">
+                            <h4 class="font-bold text-brandLightTeal">GST Other Compliance</h4>
+                            <p class="text-sm text-gray-400 mt-1">Cash Refund processing, Appeal filing, GST Surrender, DRC-03, PMT-09 allocations, and comprehensive notice handling protocols.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5">
+                            <h4 class="font-bold text-brandLightTeal">Company Annual Compliance</h4>
+                            <p class="text-sm text-gray-400 mt-1">ADT-01 appointment processing, Company KYC verification, DIR-3 KYC director logging, and structural ROC E-Filing procedures.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5">
+                            <h4 class="font-bold text-brandLightTeal">Company Other Compliance</h4>
+                            <p class="text-sm text-gray-400 mt-1">Official amendment procedures in MOA & AOA guidelines, legal surrender protocols for corporate DIN logs, and Company Name Change filings.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Company Incorporation -->
+                <section id="cat-company" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-building"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Company Incorporation</h3>
+                            <p class="text-sm text-gray-400">Formal legal business structures</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 text-center">
+                            <i class="fas fa-hotel text-brandTeal text-xl mb-2"></i>
+                            <h4 class="font-bold text-white">Private Limited Company</h4>
+                            <p class="text-xs text-gray-400 mt-1">Start your corporate journey with limited liability and clear equity structuring.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 text-center">
+                            <i class="fas fa-handshake text-brandTeal text-xl mb-2"></i>
+                            <h4 class="font-bold text-white">LLP Formation</h4>
+                            <p class="text-xs text-gray-400 mt-1">Register your Limited Liability Partnership with streamlined compliance overheads.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 text-center">
+                            <i class="fas fa-user-tie text-brandTeal text-xl mb-2"></i>
+                            <h4 class="font-bold text-white">OPC Registration</h4>
+                            <p class="text-xs text-gray-400 mt-1">Retain full single-owner structural dominance with structural corporate backing.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5 text-center">
+                            <i class="fas fa-heart text-brandTeal text-xl mb-2"></i>
+                            <h4 class="font-bold text-white">Section 8 Company</h4>
+                            <p class="text-xs text-gray-400 mt-1">Incorporate a recognized Non-Profit Organization (NPO) with statutory validation.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- DSC Class 3 -->
+                <section id="cat-dsc" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-signature"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">DSC Class 3 Solutions</h3>
+                            <p class="text-sm text-gray-400">Secure encryptions for official tender filings and portals</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-center">
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-lg font-medium text-brandLightTeal text-sm">Individual DSC</div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-lg font-medium text-brandLightTeal text-sm">Combo Package DSC</div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-lg font-medium text-brandLightTeal text-sm">Govt. Combo DSC</div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-lg font-medium text-brandLightTeal text-sm">Organization DSC</div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-lg font-medium text-brandLightTeal text-sm">Corporate Combo Org</div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-lg font-medium text-brandLightTeal text-sm">IET (DGFT) DSC</div>
+                    </div>
+                </section>
+
+                <!-- Accounting & Balance Sheet -->
+                <section id="cat-accounting" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-file-invoice-dollar"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Accounting & Balance Sheet</h3>
+                            <p class="text-sm text-gray-400">Corporate balance auditing and continuous ledger processing</p>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5">
+                            <h4 class="font-bold text-brandLightTeal">Bookkeeping & Accounting</h4>
+                            <p class="text-sm text-gray-400 mt-1">Flexible execution frameworks managed monthly or annually based on internal operational limits: Up to 20 Lakhs, 50 Lakhs, and 1 Crore INR scale horizons.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5">
+                            <h4 class="font-bold text-brandLightTeal">CMA Report Preparation</h4>
+                            <p class="text-sm text-gray-400 mt-1">Professionally structured Credit Monitoring Arrangement reports tailored for securing banking loans, project financing, and institutional capital additions.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 rounded-xl border border-brandTeal/5">
+                            <h4 class="font-bold text-brandLightTeal">Balance Sheet Services</h4>
+                            <p class="text-sm text-gray-400 mt-1">Generation of corporate Balance Sheets, forward Project Balance Sheets, and authentic CA Certification metrics for operational validations.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Income Tax Return -->
+                <section id="cat-itr" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-piggy-bank"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Income Tax Return (ITR)</h3>
+                            <p class="text-sm text-gray-400">Direct taxation filing, rectifications, and administrative responses</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-xl">
+                            <span class="text-xs text-brandTeal font-bold block">ITR-1 & ITR-2</span>
+                            <p class="text-xs text-gray-300 mt-1">Quick, accurate filing operations for salaried individuals, property stakeholders, and capital gains holders.</p>
+                        </div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-xl">
+                            <span class="text-xs text-brandTeal font-bold block">ITR-3 / ITR-4 / ITR-5</span>
+                            <p class="text-xs text-gray-300 mt-1">Seamless legal filings optimized for business professionals, corporate groups, partnership entities, and LLPs.</p>
+                        </div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-xl">
+                            <span class="text-xs text-brandTeal font-bold block">ITR-U (Updated Returns)</span>
+                            <p class="text-xs text-gray-300 mt-1">Rectify errors or declare missing earnings safely for assessment windows 2022-23, 2023-24, and 2024-25.</p>
+                        </div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-xl">
+                            <span class="text-xs text-brandTeal font-bold block">Tax Adjustments & Certifications</span>
+                            <p class="text-xs text-gray-300 mt-1">CA Certification of ITR, ITR 10E filing for Section 89(1) salary relief, and Advance Tax computation metrics.</p>
+                        </div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-xl md:col-span-2">
+                            <span class="text-xs text-brandTeal font-bold block">ITR Notice Response & Rectification</span>
+                            <p class="text-xs text-gray-300 mt-1">Expert legal evaluation and structured resolution submissions for assessment logs, defective return tags, and tax adjustments.</p>
+                        </div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-xl md:col-span-2 grid grid-cols-2 sm:grid-cols-4 gap-2 text-center text-xs font-semibold text-brandLightTeal">
+                            <div class="p-2 bg-brandDark rounded">TAN Registration</div>
+                            <div class="p-2 bg-brandDark rounded">TDS Return Filing</div>
+                            <div class="p-2 bg-brandDark rounded">Challan Submissions</div>
+                            <div class="p-2 bg-brandDark rounded">PAN-Aadhaar Link</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Graphics Design Package -->
+                <section id="cat-graphics" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-palette"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Graphics Design Package</h3>
+                            <p class="text-sm text-gray-400">High-end corporate asset development blueprints</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                        <div class="p-4 bg-brandDark/60 border border-brandTeal/5 rounded-xl text-center">
+                            <i class="fas fa-address-card text-brandTeal text-lg mb-1"></i>
+                            <h4 class="text-sm font-bold block">Visiting Card</h4>
+                            <span class="text-[11px] text-gray-400 block mt-1">Print-ready + source files</span>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 border border-brandTeal/5 rounded-xl text-center">
+                            <i class="fas fa-layer-group text-brandTeal text-lg mb-1"></i>
+                            <h4 class="text-sm font-bold block">Brochure</h4>
+                            <span class="text-[11px] text-gray-400 block mt-1">Flyers, pamphlets, standees</span>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 border border-brandTeal/5 rounded-xl text-center">
+                            <i class="fas fa-scroll text-brandTeal text-lg mb-1"></i>
+                            <h4 class="text-sm font-bold block">Pamphlet</h4>
+                            <span class="text-[11px] text-gray-400 block mt-1">Seamless structural layouts</span>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 border border-brandTeal/5 rounded-xl text-center">
+                            <i class="fas fa-bezier-curve text-brandTeal text-lg mb-1"></i>
+                            <h4 class="text-sm font-bold block">Logo Design</h4>
+                            <span class="text-[11px] text-gray-400 block mt-1">Minimalist vector art</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Local Marketing Advertisement -->
+                <section id="cat-marketing" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-bullhorn"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Local Marketing Advertisement</h3>
+                            <p class="text-sm text-gray-400">Hyperlocal footprint tracking and targeted growth optimization</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm">
+                        <div class="flex items-start gap-3 p-3 bg-brandDark/60 rounded-lg border border-brandTeal/5">
+                            <i class="fas fa-map-marked-alt text-brandTeal mt-1"></i>
+                            <div>
+                                <span class="font-bold text-white block">Google Listing Optimization</span>
+                                <span class="text-xs text-gray-400">Maximize regional physical traffic through verified profile setup.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-brandDark/60 rounded-lg border border-brandTeal/5">
+                            <i class="fas fa-globe text-brandTeal mt-1"></i>
+                            <div>
+                                <span class="font-bold text-white block">City-Wise SEO Promotion</span>
+                                <span class="text-xs text-gray-400">Target localized long-tail intent keywords.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-brandDark/60 rounded-lg border border-brandTeal/5">
+                            <i class="fas fa-search-dollar text-brandTeal mt-1"></i>
+                            <div>
+                                <span class="font-bold text-white block">Google Ads Set-Up (One-Time)</span>
+                                <span class="text-xs text-gray-400">High ROI campaigns built with accurate PPC framework rules.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-brandDark/60 rounded-lg border border-brandTeal/5">
+                            <i class="fab fa-facebook-square text-brandTeal mt-1"></i>
+                            <div>
+                                <span class="font-bold text-white block">Facebook Ads Optimization</span>
+                                <span class="text-xs text-gray-400">Targeted conversions based on lookalike user persona tracking.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-brandDark/60 rounded-lg border border-brandTeal/5">
+                            <i class="fas fa-share-nodes text-brandTeal mt-1"></i>
+                            <div>
+                                <span class="font-bold text-white block">Social Media Profiles Setup</span>
+                                <span class="text-xs text-gray-400">Simultaneous asset setup across four distinct social platforms.</span>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3 p-3 bg-brandDark/60 rounded-lg border border-brandTeal/5">
+                            <i class="fas fa-list-check text-brandTeal mt-1"></i>
+                            <div>
+                                <span class="font-bold text-white block">Top 10 Local Website Directory Listings</span>
+                                <span class="text-xs text-gray-400">High-domain authority listing for business validation.</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Website & App Development -->
+                <section id="cat-tech" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-code"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Website & App Development</h3>
+                            <p class="text-sm text-gray-400">High-performance custom architecture development</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-5 bg-brandDark/60 border border-brandTeal/5 rounded-xl">
+                            <div class="text-brandTeal font-bold text-lg mb-1">E-Commerce Architecture</div>
+                            <p class="text-sm text-gray-400 leading-relaxed">Launch features like international dynamic catalogs, fast payment integrations, secure databases, and comprehensive inventory tracking metrics.</p>
+                        </div>
+                        <div class="p-5 bg-brandDark/60 border border-brandTeal/5 rounded-xl">
+                            <div class="text-brandTeal font-bold text-lg mb-1">5-Page Corporate Identity Web</div>
+                            <p class="text-sm text-gray-400 leading-relaxed">A sleek framework engineered specifically to generate leads, display corporate solutions, and ensure clear cross-device responsivity.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Financial Services -->
+                <section id="cat-financial" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-hand-holding-usd"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Financial Services</h3>
+                            <p class="text-sm text-gray-400">Retail investment pipelines and credit allocations</p>
+                        </div>
+                    </div>
+                    <p class="text-sm text-gray-300 mb-4">Direct retail linkages for secure financial instrument allocations:</p>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-center text-xs font-bold text-white">
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-lg">Business & Personal Loans</div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-lg">Instant Credit Cards</div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-lg">Savings Accounts</div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-lg">Current Accounts</div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-lg">DMAT Accounts</div>
+                        <div class="p-3 bg-brandDark/60 border border-brandTeal/5 rounded-lg">Mutual Funds (ONDC / Regular)</div>
+                    </div>
+                </section>
+
+                <!-- Utility & Bill Payment -->
+                <section id="cat-utility" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-bolt"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Utility & BBPS Bill Payments</h3>
+                            <p class="text-sm text-gray-400">Instant regional settlements and domestic remittances</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm text-gray-300">
+                        <div class="p-4 bg-brandDark/60 border border-brandTeal/5 rounded-xl flex items-center gap-3">
+                            <i class="fas fa-money-bill-transfer text-brandTeal text-lg"></i>
+                            <div><strong>AePS & DMT:</strong> Aadhaar Enabled Payments & Domestic Money Transfer logs.</div>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 border border-brandTeal/5 rounded-xl flex items-center gap-3">
+                            <i class="fas fa-mobile-screen text-brandTeal text-lg"></i>
+                            <div><strong>Recharges & Utility:</strong> Mobile, DTH, Electricity, Water, and Institutional Education Fees.</div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Identity & Government to Citizen (G2C) -->
+                <section id="cat-identity" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-user-check"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Identity Services & G2C</h3>
+                            <p class="text-sm text-gray-400">State and Central digital identity modifications</p>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-brandTeal block mb-2">Health & Insurance Schemes</span>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs text-gray-300">
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Ayushman Card</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Ayushman Card Check</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">PMSBY Enrolment</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">PMJJBY Frameworks</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Senior Citizen Card - KA</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Senior Citizen Card - MH</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Senior Citizen Card - Assam</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">UDID Card Processing</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-brandTeal block mb-2">Core Identity Registrations</span>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs text-gray-300">
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">New Voter Card Registry</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Voter Card Correction</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">New Passport Application</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Passport Renewal Filing</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">LPG eKYC Linkages</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Aadhaar NPCI Mapping</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Aadhaar PAN Validation</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Voter Aadhaar Linking</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Aadhaar Deactivation File</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">FTI TTP Registration</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <span class="text-xs font-bold uppercase tracking-wider text-brandTeal block mb-2">State Domicile, Caste & Income Certificates</span>
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs text-gray-300">
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Domicile Certificate</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Caste Certificate MH</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Caste Certificate Haryana</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Income Certificate HR</div>
+                                <div class="p-2.5 bg-brandDark/60 rounded border border-brandTeal/5">Income Certificate MH</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Travel Protocols -->
+                <section id="cat-travel" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-plane"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Travel & Ticketing Systems</h3>
+                            <p class="text-sm text-gray-400">Direct booking linkages for modern agents</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-4 bg-brandDark/60 border border-brandTeal/5 rounded-xl">
+                            <span class="font-bold text-brandLightTeal block mb-1"><i class="fas fa-train text-xs mr-1"></i> IRCTC Agent Registration</span>
+                            <p class="text-xs text-gray-400">OTP-based IRCTC Agent console setup (No Dongle required) and classic high-security Dongle-Based terminal credentials.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 border border-brandTeal/5 rounded-xl">
+                            <span class="font-bold text-brandLightTeal block mb-1"><i class="fas fa-bus text-xs mr-1"></i> Public Transport Booking</span>
+                            <p class="text-xs text-gray-400">Online Bus Ticket bookings across premium AC/Non-AC, structural Sleeper, and Seater configurations.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 border border-brandTeal/5 rounded-xl">
+                            <span class="font-bold text-brandLightTeal block mb-1"><i class="fas fa-hotel text-xs mr-1"></i> Hospitality Allocations</span>
+                            <p class="text-xs text-gray-400">Instant API hotel inventory access covering budget travel structures and absolute luxury stays globally.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 border border-brandTeal/5 rounded-xl">
+                            <span class="font-bold text-brandLightTeal block mb-1"><i class="fas fa-plane-up text-xs mr-1"></i> Flight Ticketing Services</span>
+                            <p class="text-xs text-gray-400">Real-time domestic route bookings and complex multi-destination international commercial routes.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Vehicle Related Services -->
+                <section id="cat-vehicle" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-car"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Vehicle Related Services</h3>
+                            <p class="text-sm text-gray-400">RTO filings and road compliance metrics</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs text-gray-300">
+                        <div class="p-3 bg-brandDark/60 rounded border border-brandTeal/5"><i class="fas fa-credit-card mr-1 text-brandTeal"></i> HSRP Number Plate Order</div>
+                        <div class="p-3 bg-brandDark/60 rounded border border-brandTeal/5"><i class="fas fa-graduation-cap mr-1 text-brandTeal"></i> Learners License Filing</div>
+                        <div class="p-3 bg-brandDark/60 rounded border border-brandTeal/5"><i class="fas fa-map-location mr-1 text-brandTeal"></i> DL Address Change Update</div>
+                        <div class="p-3 bg-brandDark/60 rounded border border-brandTeal/5"><i class="fas fa-indian-rupee-sign mr-1 text-brandTeal"></i> State/Commercial Vehicle Tax</div>
+                        <div class="p-3 bg-brandDark/60 rounded border border-brandTeal/5"><i class="fas fa-link mr-1 text-brandTeal"></i> Driving License Aadhaar Link</div>
+                        <div class="p-3 bg-brandDark/60 rounded border border-brandTeal/5"><i class="fas fa-link mr-1 text-brandTeal"></i> Vehicle RC Aadhaar Linking</div>
+                        <div class="p-3 bg-brandDark/60 rounded border border-brandTeal/5"><i class="fas fa-copy mr-1 text-brandTeal"></i> Duplicate Driving License File</div>
+                        <div class="p-3 bg-brandDark/60 rounded border border-brandTeal/5"><i class="fas fa-download mr-1 text-brandTeal"></i> RC Particulars Download</div>
+                        <div class="p-3 bg-brandDark/60 rounded border border-brandTeal/5"><i class="fas fa-id-card-clip mr-1 text-brandTeal"></i> Duplicate RC Smart Card</div>
+                    </div>
+                </section>
+
+                <!-- Enterprise Software -->
+                <section id="cat-software" class="bg-brandGray/40 border border-brandTeal/10 rounded-2xl p-6 md:p-8 backdrop-blur-sm scroll-mt-24">
+                    <div class="flex items-center gap-3 mb-6 border-b border-brandTeal/20 pb-4">
+                        <div class="p-3 bg-brandTeal/10 rounded-lg text-brandTeal text-xl"><i class="fas fa-laptop-code"></i></div>
+                        <div>
+                            <h3 class="text-2xl font-bold">Enterprise Software Solutions</h3>
+                            <p class="text-sm text-gray-400">Automation utilities and lead collection tools</p>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="p-4 bg-brandDark/60 border border-brandTeal/5 rounded-xl md:col-span-2">
+                            <h4 class="font-bold text-brandLightTeal">GST Invoice & Automation</h4>
+                            <p class="text-xs text-gray-400 mt-1">Generate complete legal tax reports, file systematic returns, and experience state-of-the-art accounting ledger automation processing.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 border border-brandTeal/5 rounded-xl">
+                            <h4 class="font-bold text-brandLightTeal">Lead Generation Utilities</h4>
+                            <p class="text-xs text-gray-400 mt-1">Extract completely fresh lead signals for new GST Registrations and pinpoint regional GST defaulters automatically.</p>
+                        </div>
+                        <div class="p-4 bg-brandDark/60 border border-brandTeal/5 rounded-xl md:col-span-3 text-center text-sm font-medium text-white flex items-center justify-center gap-2">
+                            <i class="fas fa-shield-heart text-brandTeal"></i>
+                            <span>Includes <strong>Coversure</strong> Personal Wellness Asset management dashboard metrics.</span>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Call to Action (Payment Integration Block) -->
+    <section class="bg-gradient-to-t from-brandGray to-brandDark py-16 px-4 border-t border-brandTeal/10">
+        <div class="max-w-3xl mx-auto bg-gradient-to-br from-brandGray to-brandDark border border-brandTeal/30 rounded-3xl p-8 md:p-12 text-center shadow-2xl relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-32 h-32 bg-brandTeal/10 rounded-full blur-2xl"></div>
+            <i class="fas fa-wallet text-4xl text-brandTeal mb-4"></i>
+            <h3 class="text-3xl font-bold tracking-tight mb-4">Join Our Growing Network Immediately</h3>
+            <p class="text-gray-300 text-sm md:text-base mb-8 max-w-xl mx-auto">
+                Ready to scale your business as an authorized Amvika Next Retailer? Secure your portal onboarding credentials directly via our fast-track automated gateway link below.
+            </p>
+            <div class="inline-block bg-brandDark/80 border border-brandTeal/20 rounded-2xl p-4 mb-8 text-left max-w-md w-full">
+                <div class="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brandTeal mb-1">
+                    <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> Secured via Razorpay
+                </div>
+                <div class="text-sm font-semibold text-white">Instant Authorized Retailer Allocation Portal Link</div>
+            </div>
+            <div>
+                <a href="https://rzp.io/rzp/zqQDIEc" target="_blank" class="block sm:inline-block w-full sm:w-auto bg-gradient-to-r from-brandTeal to-brandLightTeal text-brandDark font-extrabold text-lg px-12 py-4 rounded-xl shadow-xl hover:shadow-brandTeal/20 hover:scale-[1.03] transition duration-200">
+                    <i class="fas fa-bolt mr-2"></i> Pay & Register Now
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brandDark border-t border-brandTeal/20 py-12 px-4 text-center text-sm text-gray-400">
+        <div class="max-w-7xl mx-auto space-y-4">
+            <div class="flex justify-center items-center gap-2">
+                <span class="text-white font-bold tracking-widest text-base">AMVIKA NEXT</span>
+                <span class="text-xs text-brandTeal font-semibold px-2 py-0.5 border border-brandTeal/30 rounded">2026</span>
+            </div>
+            <p class="max-w-md mx-auto text-xs text-gray-500">
+                Corporate Office Address: Matra Shree Sadan, Yadav Colony, Jabalpur, Madhya Pradesh, India.
+            </p>
+            <div class="pt-4 border-t border-brandTeal/5 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+                <div>&copy; 2026 Amvika Next. All Rights Reserved.</div>
+                <div class="flex gap-4">
+                    <a href="tel:9407171421" class="hover:text-brandTeal transition">Support Line: 9407171421</a>
+                    <a href="mailto:contact@amvikanext.com" class="hover:text-brandTeal transition">Email: contact@amvikanext.com</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Category Navigator Highlight Interactivity Script -->
+    <script>
+        function scrollToCategory(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Highlight category buttons dynamically on scroll or selection change
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id^="cat-"]');
+            const scrollPos = window.scrollY + 200;
+
+            sections.forEach(section => {
+                if (scrollPos >= section.offsetTop && scrollPos < (section.offsetTop + section.offsetHeight)) {
+                    const id = section.getAttribute('id');
+                    const activeBtn = document.querySelector(`.category-btn[data-target="${id}"]`);
+                    
+                    document.querySelectorAll('.category-btn').forEach(btn => {
+                        btn.classList.remove('bg-brandTeal', 'text-brandDark', 'font-bold');
+                        btn.classList.add('bg-brandGray', 'text-gray-300', 'font-medium');
+                    });
+
+                    if (activeBtn) {
+                        activeBtn.classList.remove('bg-brandGray', 'text-gray-300', 'font-medium');
+                        activeBtn.classList.add('bg-brandTeal', 'text-brandDark', 'font-bold', 'shadow-md');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
